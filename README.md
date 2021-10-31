@@ -1,5 +1,6 @@
 # MinehutService
 
+[![](https://jitpack.io/v/Echological/MinehutService.svg)](https://jitpack.io/#Echological/MinehutService)
 
 > Maven Setup
 ```xml
@@ -28,7 +29,7 @@ MinehutService.online((Boolean online) -> {})
 ```
 
 ```java
-MinehutService.data((JSONObject data) -> {})
+MinehutService.server((JSONObject server) -> {})
 ```
 
 ```java
@@ -38,3 +39,4 @@ MinehutService.motd((String motd) -> {})
 ```java
 MinehutService.players((JSONArray players) -> {})
 ```
+*All methods can also return their datatype, rather than using a constructor*
