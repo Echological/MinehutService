@@ -7,6 +7,7 @@
     <groupId>com.github.Echological</groupId>
     <artifactId>MinehutService</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -55,6 +56,12 @@
             <artifactId>unirest-java</artifactId>
             <version>3.13.0</version>
             <classifier>standalone</classifier>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
