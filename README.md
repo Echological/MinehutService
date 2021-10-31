@@ -39,4 +39,4 @@ MinehutService.motd((String motd) -> {})
 ```java
 MinehutService.players((JSONArray players) -> {})
 ```
-*All methods can also return their datatype, rather than using a constructor*
+*All methods can also return their datatype, rather than using a consumer*
