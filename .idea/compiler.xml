@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MinehutService" target="16" />
+      <module name="MinehutService" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
