@@ -7,7 +7,7 @@ import kong.unirest.json.JSONObject;
 
 import java.util.function.Consumer;
 
-public record MinehutService() {
+public class MinehutService {
 
     static String id = System.getenv("SERVER_ID");
 
