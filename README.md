@@ -14,7 +14,7 @@
 <dependency>
     <groupId>com.github.Echological</groupId>
     <artifactId>MinehutService</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <scope>compile</scope>
 </dependency>
 ```
