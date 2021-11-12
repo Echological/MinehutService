@@ -6,7 +6,7 @@
 
     <groupId>com.github.Echological</groupId>
     <artifactId>MinehutService</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -55,7 +55,7 @@
         <dependency>
             <groupId>com.konghq</groupId>
             <artifactId>unirest-java</artifactId>
-            <version>3.13.0</version>
+            <version>3.13.3</version>
             <classifier>standalone</classifier>
         </dependency>
         <dependency>
