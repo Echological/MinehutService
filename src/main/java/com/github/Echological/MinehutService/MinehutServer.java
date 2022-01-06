@@ -13,10 +13,16 @@ public class MinehutServer {
     static String id = System.getenv("SERVER_ID");
 
     static JSONObject data() {
-        HttpResponse<JsonNode> res = Unirest.get(mainApi("server", id))
+        String endpoint = mainApi("server", id);
+        HttpResponse<JsonNode> res = Unirest.get(endpoint)
                 .asJson();
 
         JsonNode node = res.getBody();
+
+        if (node == null) {
+            System.out.println("Request to "+endpoint+" failed ("+res.getStatus()+")");
+            return null;
+        }
 
         return node.getObject().getJSONObject("server");
     }
@@ -33,6 +39,7 @@ public class MinehutServer {
      */
     public static String name(){
         JSONObject data = data();
+        if (data == null) return null;
         return data.getString("name");
     }
 
@@ -41,6 +48,7 @@ public class MinehutServer {
      */
     public static boolean online(){
         JSONObject data = data();
+        if (data == null) return false;
         return data.getBoolean("online");
     }
 
@@ -49,6 +57,7 @@ public class MinehutServer {
      */
     public static JSONArray players(){
         JSONObject data = data();
+        if (data == null) return null;
         return data.getJSONArray("players");
     }
 
@@ -57,6 +66,7 @@ public class MinehutServer {
      */
     public static String motd(){
         JSONObject data = data();
+        if (data == null) return null;
         return data.getString("motd");
     }
 
@@ -65,6 +75,7 @@ public class MinehutServer {
      */
     public static JSONArray installedContent(){
         JSONObject data = data();
+        if (data == null) return null;
         return data.getJSONArray("installed_content");
     }
 
