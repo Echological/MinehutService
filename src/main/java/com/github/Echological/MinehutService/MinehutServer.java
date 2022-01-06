@@ -8,7 +8,7 @@ import kong.unirest.json.JSONObject;
 
 import static com.github.Echological.MinehutService.MinehutService.mainApi;
 
-public class Server {
+public class MinehutServer {
 
     static String id = System.getenv("SERVER_ID");
 

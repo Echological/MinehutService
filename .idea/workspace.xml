@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d22f9bc9-9bcd-45fb-b53b-b0f4a9751c5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/Echological/MinehutService/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/Echological/MinehutService/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinehutService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MinehutService.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/Echological/MinehutService/MinehutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/Echological/MinehutService/MinehutService.java" afterDir="false" />
-    </list>
+    <list default="true" id="d22f9bc9-9bcd-45fb-b53b-b0f4a9751c5b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

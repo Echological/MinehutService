@@ -10,10 +10,10 @@ import java.util.Objects;
 
 import static com.github.Echological.MinehutService.MinehutService.productsApi;
 
-public class Products {
+public class MarketProducts {
 
     public static JSONObject product(String id) {
-        
+
         for (Object product : products()) {
             JSONObject n = (JSONObject) product;
             if (Objects.equals(n.getString("sku"), id)) {
