@@ -2,8 +2,8 @@ package com.github.Echological.MinehutService;
 
 public class MinehutService {
 
-    static String MAIN_API="https://api.minehut.com/";
-    static String PRODUCTS_API="https://facade-service-prod.superleague.com/facade/v1/client/";
+    static String MAIN_API="https://api.minehut.com";
+    static String PRODUCTS_API="https://facade-service-prod.superleague.com/facade/v1/client";
 
     public static String mainApi() {
         return MAIN_API;
