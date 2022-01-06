@@ -54,7 +54,9 @@ MarketProoducts.product(id); // Gets a market product by ID
 ```java
 MinehutService.mainApi(); // Gets the base url for the Minehut API
 
-MinehutService.mainApi(endpoint); // Gets the base url and an endpoint
+MinehutService.mainApi(...endpoint); // Gets the base url and endpoints
 
 MinehutService.productsApi(); // Gets the products api url
+
+MinehutService.productsApi(...endpoint); // Gets the base products url and endpoints
 ```
