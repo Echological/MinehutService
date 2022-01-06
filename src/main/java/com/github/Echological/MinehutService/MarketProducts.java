@@ -13,18 +13,14 @@ import static com.github.Echological.MinehutService.MinehutService.productsApi;
 public class MarketProducts {
 
     public static JSONObject product(String id) {
-
-        for (Object product : products()) {
-            JSONObject n = (JSONObject) product;
-            if (Objects.equals(n.getString("sku"), id)) {
-                return n;
-            }
-        }
-        return null;
+        HttpResponse<JsonNode> res = Unirest.get(productsApi("product", id))
+                .asJson();
+        JsonNode node = res.getBody();
+        return node.getObject();
     }
 
     public static JSONArray products() {
-        HttpResponse<JsonNode> res = Unirest.get(productsApi())
+        HttpResponse<JsonNode> res = Unirest.get(productsApi("products"))
                 .asJson();
         JsonNode node = res.getBody();
         return node.getArray();

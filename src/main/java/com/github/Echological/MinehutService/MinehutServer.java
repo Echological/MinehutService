@@ -13,7 +13,7 @@ public class MinehutServer {
     static String id = System.getenv("SERVER_ID");
 
     static JSONObject data() {
-        HttpResponse<JsonNode> res = Unirest.get(mainApi("servers")+id)
+        HttpResponse<JsonNode> res = Unirest.get(mainApi("servers", id))
                 .asJson();
 
         JsonNode node = res.getBody();
