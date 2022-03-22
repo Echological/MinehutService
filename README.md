@@ -36,7 +36,7 @@ MinehutServer.motd(); // Gets the MOTD of the server
 
 MinehutServer.players(); // Gets a list of player uuids of those on the server
 
-MinehutServer.installedContent(); // Gets a list of installed content by id 
+MinehutServer.exists(); // Checks if this server exists, checks if the local id and data exists, and that the server is online
         
 MinehutServer.id(); // Gets the ID of the server
 ```
