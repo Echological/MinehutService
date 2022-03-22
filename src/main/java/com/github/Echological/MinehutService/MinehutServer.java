@@ -10,6 +10,10 @@ import static com.github.Echological.MinehutService.MinehutService.mainApi;
 
 public class MinehutServer {
 
+    public MinehutServer(String id) {
+        MinehutServer.id = id;
+    }
+
     static String id = System.getenv("SERVER_ID");
 
     static JSONObject data() {
@@ -72,6 +76,7 @@ public class MinehutServer {
 
     /**
      * @return JSONArray - installed content on the server
+     * @deprecated endpoint no longer exists
      */
     public static JSONArray installedContent(){
         JSONObject data = data();
@@ -84,6 +89,14 @@ public class MinehutServer {
      */
     public static String id() {
         return id;
+    }
+
+    /**
+     * @return Boolean - if the server exists and is online
+     */
+    public static boolean exists() {
+        if (id == null || data() == null) return false; // checks if it exists
+        return online(); // if online = good, if not = bad
     }
 
 }
